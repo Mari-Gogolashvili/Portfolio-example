@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&family=Lexend:wght@100;200;300;400;500;600;700;800;900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sofia+Sans+Extra+Condensed:ital,wght@0,400;0,700;1,400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Poppins';
+    font-weight: 500;
+
+}
+body{
+    background-color: #0C151D;
+}
+
+
+
+.switch{
+    height: 5rem;
+    width: 100%;
+}
+.switch i{
+    margin: 2rem auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    cursor: pointer;
+    color:#A3ABB2;
+}
+
+
+
+/*----------------profile section starts------------ */
+.profile-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.profile{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+.info-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.svgs{
+    display: flex;
+    flex-direction: row;
+}
+.svgs img{
+    height: 1.5rem;
+    margin-right: 1.3rem;
+    margin-top: 1rem;
+}
+.prf{
+    height: 10rem;
+    display: block;
+    margin: auto;
+}
+.info h1{
+    color:#F1F2F4 ;
+    font-size: 2rem;
+   
+}
+
+.info h2{
+    color: #A3ABB2;
+    font-size: 1rem;
+    margin-top: .7rem;
+}
+
+/*--------------------profile section ends----------------- */
+
+
+
+
+
+
+
+
+/*-------------------experience section starts--------------------*/
+
+.experience-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 3.5rem;
+    margin-top: 5rem;
+}
+
+.experience-container h1,
+.experience-container h2,
+.experience-container h3{
+    color:#A3ABB2;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+/*---------experienceskills section ends---------------- */
+
+
+
+
+
+
+
+
+/*----------contactsection starst--------------*/
+.contact{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+    gap: 2rem;
+}
+
+.contact button{
+    padding: 10px;
+    min-width: 12rem;
+    min-height: 3rem;
+    border-radius: 10px;
+    border: none;
+    color:#3D3D3D;
+    font-size: 1.1rem;
+    background-color: #FFE071;
+    cursor: pointer;
+
+
+}
+.dwn{
+    /* display: inline-block; */
+    height: 1rem;
+}
+
+.contact :nth-of-type(2){
+    padding: 12px;
+    font-size: 1.1rem;
+    color:#A3ABB2;
+    background-color: #171f268c;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.393);
+}
+
+/*----------contact section ends----------------*/
+
+
+
+
+/*----------portfolio & skills------------------*/
+/* ნერვის ყველა უჯრედი შეიწირა , მაგრამ მაინც არ გამოვდა ისეთი ,  როგორიც მინდოდა */
+.portfolio{
+    width: 60%;
+    margin: 5rem auto;
+    padding: 20px;
+    border-radius: 15px;
+    background-color:#171f268c;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.393);
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    padding: 30px; 
+    flex-wrap: nowrap;
+}
+
+.portfolio button{
+    border: none;
+    border-radius: 10px;
+    /* padding:10px; */
+    min-height: 3rem;
+    min-width: 12rem;
+    background-color: #0C151D;
+    color: #A3ABB2;
+    font-size: 1.1rem;
+
+}
+.portfolio :nth-of-type(2){
+    background-color: transparent;
+}
+
+/*----------portfolio & skills------------------*/
+
+
+
+
+/*-------------------images section-------------------*/
+
+.images-container{
+  
+   max-width: 50%;
+   margin: auto;
+ 
+}
+.images{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex-direction: column; */
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+.images img{
+    cursor: pointer;
+}
+
+/*-------------------images section-------------------*/
+
+
+.credit{
+    text-align: center;
+    color: #A3ABB2;
+    font-size: .9rem;
+    margin: 5rem 0 .7rem 0;
+}
+
+
+
+
+
+/*----------------------------media------------------------------*/
+
+@media (max-width:415px){
+    .portfolio{
+        width: 95%;
+    }
+}
+
+
+@media (max-width:443px){
+    .info-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .info h1{
+       text-align: center;
+       
+    }
+    
+    .info h2{
+        text-align: center;
+    }
+    .svgs img{
+        margin: 2rem 1.1rem;
+        
+    }
+    .contact button{
+        min-width: 8rem;
+    }
+    .portfolio button{
+        min-width: 5rem;
+        gap: 0;
+        padding: 8px; 
+    }
+
+   
+
+}
+
+
+@media (max-width:641px){
+    .portfolio{
+        width: 80%;
+    }
+}
+
+
+@media (max-width:856px){
+     .portfolio button{
+        min-width: 8rem;
+        gap: 2rem;
+        padding: 15px; 
+    }
+
+}
+
